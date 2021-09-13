@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
+    # My apps
+    'user_control.apps.UserControlConfig'
+
 ]
 
 MIDDLEWARE = [
