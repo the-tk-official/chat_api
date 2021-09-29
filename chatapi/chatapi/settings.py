@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # My apps
-    'user_control.apps.UserControlConfig'
+    'user_control.apps.UserControlConfig',
 
 ]
 
@@ -129,3 +129,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Global settings my django project
+# Specify the model from where to authenticate a user
+
+AUTH_USER_MODEL = 'user_control.CustomUser'
